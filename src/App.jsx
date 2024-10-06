@@ -50,20 +50,21 @@ const copyPasswordToClipboard = useCallback(()=>{
 
   return (
     <>
-      <div
-        className="h-[100vh] w-[100vw] bg-gradient-to-r from-black
-   via-blue-950 to-blue-900 p-4 text-center "
+
+      <div 
+        className=" h-screen  w-screen bg-gradient-to-r from-black
+   via-blue-950 to-blue-900 py-10 text-center overflow-hidden"
       >
         <h1 className="text-center text-4xl font-semibold  text-yellow-400 shadow-md hover:shadow-lg hover:shadow-yellow-400 shadow-yellow-500 w-fit mx-auto rounded-2xl p-2 cursor-pointer hover:scale-105 transition-transform  ">
           {" "}
           Password Generator{" "}
         </h1>
 
-        <div className=" mt-40 w-[450px] mx-auto gap-6 border-transparent hover:shadow-lg shadow-md shadow-yellow-500 transition-transform hover:scale-105 hover:shadow-yellow-400 rounded-md border-2 h-[30vh] p-10  ">
+        <div className=" mt-40 mx-auto w-fit gap-6 border-transparent hover:shadow-lg shadow-md shadow-yellow-500 transition-transform hover:scale-105 hover:shadow-yellow-400 rounded-md border-2 h-[30vh] lg:p-10 p-6  ">
           <input
             type="text"
             value={password}
-            className=" outline-none text-center placeholder:text-yellow-400 text-yellow-400 text-xl shadow-md shadow-yellow-300  rounded-lg bg-blue-950  border-none w-60 h-10 hover:scale-105 "
+            className=" outline-none text-center placeholder:text-yellow-400 text-yellow-400 text-xl shadow-md shadow-yellow-300  rounded-lg bg-blue-950  border-none w-50 h-10 hover:scale-105 "
             placeholder="Password"
             readOnly
             ref={passwordRef}
@@ -122,7 +123,7 @@ const copyPasswordToClipboard = useCallback(()=>{
           </div>
         </div>
 
-        <div className="fixed bottom-4 mx-auto w-full " >
+        <div className="absolute bottom-4   mx-auto w-full " >
 
         <Footer/>
         </div>
